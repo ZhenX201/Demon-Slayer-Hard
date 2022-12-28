@@ -1,0 +1,139 @@
+-- CONFIG:
+
+shared.ftime = 150 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[ 
+[8tsfh]-[wG]-[tuh]--8-
+[9ypdh]-[eG]-[Iyh]--9 a 
+[0oah]-[rG]-[uoaf]--0 [pd] 
+[9y]-e-[yI]-[oa] I [yd] 
+[18usf]-8-[wr]-[sf]-h 
+[G9eydj]----[afh]-j 
+[30afk]-[29]-[30]-[29] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [29yp]e[29yp]e
+[30oaf]-[0h]-[ruG]-d [0f] [Ipd] 
+[29]-e-[eyo] [up] [up]o[9up] [ps] 
+[18oa] u8-[wr]--0-
+[29] [ey]Q[yo]p[9w][Ia]-[Qp] [Iwa] [epd] 
+[30oaf]-[0h]-[ruG]-d [0f] [Ipd] 
+[29]-e-[eyod] [hk][Gj][hk][Gj][9hk] [jl] 
+[18hk] [sh]w-[tu]--0 h 
+[29pdG]-[epdG]-[eyopdh] [dj]-9 h 
+[30afj]-[0fh]-[ruaf]-h [0k] [Gj] 
+[29] [Ip]e[Ip] [Ieyop]o[Ip]-a9 [oh] 
+[18afj]-[8fh]-[wtaf]-h [8fz]-
+[29] pep [eyop]op Ioy [eoh] 
+[30afj]-[0fh]-[ruaf]-h [0k] [Gj] 
+[29]-e[Gj] [Geyodk]-[Gdk] [9z] k 
+[18sfj]-[8sfh]-[wt]-8 w [th] 
+[29pdG]-[epdG]-[eyopdh] [9pdj]QeyIpdG
+[8tsfh]-[wG]-[tuh]--8-
+[9ypdh]-[eG]-[Iyh]--9 a 
+[0oah]-[rG]-[uoaf]--0 [pd] 
+[9y]-e-[yI]-[oa] I [yd] 
+[18usf]-[18]-[18] [sf] [18] h 
+[G29dj]-[29]-[29] [afh] [29] j 
+[30afk] [30ru] [30ru] [30ru] [30uf] [30IG] [30oh] [30pj] 
+0757[30yod]-[yod]-[afk]-
+[1psfj]3[5ak]8[wtdz] [8ak] [tpj]w[0ak][8ak]tw[0oh]8
+[G2pdj]$[6ak]9[eydz] [9ak] [ypj]e[Qak][9ak]ye[Qyd]9
+[3uoaf]5[7oh][0oh][ru] [0yd] [yud]r[wuf]0[uoh]r[wuf]0
+[G2djz]$69[Geysjl] 9 [Gyak]eQ[9pj]ye[Qoh]9
+[1osfh]358[wt] [8oh] tw[0pj]8[tak]w[DG0pj]8
+7@$7[rQIG] [7pj] rQ[(ak]7[rdz]Q[(afhk]7
+[30]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30yp]e[yp][29e][yod] [30] [yod] [29] [3afk]030
+[1psfj]3[5ak]8[wtdz] [8ak] [tpj]w[0ak][8ak]tw[0oh]8
+[G2pdj]$[6ak]9[eydz] [9ak] [ypj]e[Qak][9oh]ye[Qoh]9
+[D7oah]@$7[Qrpj] [G7ak] rQ[(ak]7[rhv]Q[k(GC]7
+3570[rudkz] 0 [uafk]rw[0pfj]ur[woh]0
+[1osfh]358[wt] [8oh] tw[0pj]8[tak]w[0pj]8
+[9ey]--[ey] [ey]-[ru]-
+[30]-[29]-[30]-[29] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [29yp]e[29yp]e
+[30oaf]-[0h]-[ruG]-d [0f] [Irupd] 
+[29]-e-[eyo] [up] [up]o[9up] [eyps] 
+[18oa] u8-[wr]-8 w r 
+[29] [ey]Q[yo]p[9w][Ia]-[Qp] [Iwa] [epd] 
+[30oaf]-[0h]-[ruG]-d [0f] [Irupd] 
+[29]-e-[eyod] [hk][Gj][hk][Gj][9hk] [eyjl] 
+[18hk] [sh]8-[wr]-8 w [rh] 
+[29pdG]-[epdG]-[eyopdh] [dj]-[269afk]-
+[30] [fj][0ruh][fj] [0rufj]j[fj] [fj]j[rufj] [0h]f
+[30] [fj][0ruh][fj] [0rufj]j[fj] [fj]k[ruj] [0h] 
+[30] z[0ruz][fz] [0rul]k[fl] kj[rufk] [0j]h
+[18oaf]-[8wt][afh] [8wt] [afj]-[eyafk] 9 
+[30] [fj][0ruh][fj] [0rufj]hG-f[ru] [0d] 
+[30] [fj][0ruh][fj] [0rufj]j[fj] l [eyafk] [9d] 
+[30afk]-3[70sl] [3afk] [70] [3sl] [70afk] 3 
+[30]-[30][yod]-[yod]-[afk]-
+[1psfj]3[5ak]8[wtdz] [8ak] [tpj]w[0ak][8ak]tw[0oh]8
+[G2pdj]$[6ak]9[eydz] [9ak] [ypj]e[Qak][9ak]ye[Qyd]9
+[3uoaf]5[7oh][0oh][ru] [0yd] [yud]r[wuf]0[uoh]r[wuf]0
+[G2djz]$69[Geysjl] 9 [Gyak]eQ[9pj]ye[Qoh]9
+[1osfh]358[wt] [8oh] tw[0pj]8[tak]w[DG0pj]8
+7@$7[rQIG] [7pj] rQ[(ak]7[rdz]Q[(afhk]7
+[30]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30yp]e[yp][29e][yod] [30] [yod] [29] [3afk]030
+[1psfj]3[5ak]8[wtdz] [8ak] [tpj]w[0ak][8ak]tw[0oh]8
+[G2pdj]$[6ak]9[eydz] [9ak] [ypj]e[Qak][9oh]ye[Qoh]9
+[D7oah]@$[7pj][Qr] [G7ak] rQ[(ak]7[rhv]Q[k(GC]7
+3570[rudkz] 0 [uafk]rw[0pfj]ur[woh]0
+[1osfh]358[wt] [8oh] tw[0pj]8[tak]w[0pj]8
+[9ey]--[pdj] [pdj]-[afk]-
+[18]-r-[uo]----
+[29]-e-[yo]----
+[30]-r-[yo]----
+[29]-e-[yI]-o I y 
+[18]-r-[uo]----
+[29]-e-[yo]----
+[30]-r-[yo]----
+[29]-e-[yI]-o I y 
+[18]-r-[uoafh] [afh]--[pdG] 
+[29pdG]-e-[yod] [od]-a-p 
+[30]-r-[uoafh] [afh]--[Gdj] 
+[G29dj]-e-[Iyk] [Gdk] o[dG]I [yh] 
+[18]-r-[uoafh] [afh]--[pdG] 
+[29pdG]-e-[yod] [od]-a-p 
+[30]-r-[uoafh] [afh]--[Gdj] 
+[G29dj]-e-[Iyz] [dhl] okI [yh] 
+[18]-r-[uoafh] [afh] 8 w [tpdG] 
+[29pdG]-e-[yod] [od] 9ae [yp] 
+[30]-r-[uoafh] [afh] 0 r [Gudj] 
+[G29dj]-e-[Iyk] [Gdk] o[dG]I [yh] 
+[18sfh]-j[18] k [18sfk]-[18] d 
+[29pd]-[pd][29] [dz] [29djz]-[29] j 
+[30pfj] [30][pj][30] [30ak] [30afk] [30IG] [30oh] [30pj] 
+[30]-[30][yod] [30] [yod][30]-[30afk] [30] 
+[psfj] [ak] [18dz] [18ak] [18pj] [ak][8ak]-[wtoh] 
+[G29pdj] [ak]9[dz] [eyak] [pj] [2ak][ak][69] [2yd] 
+[30uoaf] [oh][0oh]-[ryud] [yd] [3uf] [70oh] [3uf] 
+[G29djz]-9[Gsjl] [ey] [Gak] 2[pj][69] [2oh] 
+[18osfh]-8-[wtoh]-[1pj] [58ak] [DG1pj] 
+7-7[IG] [Qrpj]-[7ak] [$7dz] [7dhkz] 
+[30]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30yp]e[yp][29e][yod] [30] [yod] [29] [3afk]030
+[1psfj]3[5ak]8[wtdz] [8ak] [tpj]w[0ak][8ak]tw[0oh]8
+[G2pdj]$[6ak]9[eydz] [9ak] [ypj]e[Qak][9oh]ye[Qoh]9
+[D7oah]@$7[Qrpj] [G7ak] rQ[(ak]7[rhv]Q[k(GC]7
+3570[rudkz] 0 [uafk]rw[0pfj]ur[woh]0
+[1osfh]358[wt] [8oh] 18[1pj]8[1ak]8[1pj]8
+2$69[ey] [9pdj] [ypdj]eQ9[yafk]eQ9
+135[8t][wt] [8os] tw[0t][8o][ts][wo][0u][8t]
+[2y]$6[9y][ey] [9pd] ye[Qy][9p][yd][ep][QI][9y]
+[3u]57[0u][ru] [0af] ur[wu][0a][uf][ra][wo][0u]
+[2y]$6[9y][ey] [9pd] ye[Qy][9p][yd][ep][QI][9y]
+[1t]35[8t][wt] [8osh]-[1pj]8[tak]w[G0pdj]8
+[29]--[pd] [pd]-[af]-
+[30ru]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r
+[30ru]-[29ey]-[30ru]-[29r] [30ua]r[30ua]r ]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZhenX201/Auto-Piano-Player/main/source"))()
